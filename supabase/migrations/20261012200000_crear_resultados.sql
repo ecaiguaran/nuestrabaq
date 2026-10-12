@@ -1,5 +1,5 @@
 -- Tabla donde la página guarda cada test terminado.
--- Pégalo completo en Supabase → SQL Editor → New query → Run.
+-- La integración de Supabase con GitHub aplica este archivo sola. Si prefieres hacerlo a mano: SQL Editor → New query → pega todo → Run.
 
 create table if not exists public.resultados (
   id uuid primary key default gen_random_uuid(),

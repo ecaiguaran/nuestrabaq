@@ -1,0 +1,2 @@
+# Configuración mínima del proyecto Supabase (la integración con GitHub lee la carpeta supabase/).
+project_id = "nuestrabaq"

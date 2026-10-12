@@ -8,14 +8,14 @@ Test de arquetipos de liderazgo de NuestraBarranquilla para encuentros y eventos
 |---|---|
 | `index.html` | El test completo (preguntas, logos, resultados). |
 | `config.js` | Los datos de conexión a Supabase. **Es el único archivo que tienes que editar.** |
-| `supabase/schema.sql` | Crea la tabla `resultados` y sus reglas de seguridad. |
+| `supabase/migrations/20261012200000_crear_resultados.sql` | Crea la tabla `resultados` y sus reglas de seguridad. |
 
 ## 1. Crear la base de datos en Supabase (≈10 min)
 
 1. Entra a <https://supabase.com>, crea una cuenta y haz clic en **New project**.
    - Nombre: `nuestrabaq`. Región: **East US** o **São Paulo** (las más cercanas a Colombia).
    - Guarda la contraseña de la base de datos en un lugar seguro.
-2. Cuando el proyecto esté listo, ve a **SQL Editor → New query**, pega todo el contenido de `supabase/schema.sql` y presiona **Run**. Debe decir *Success*.
+2. Cuando el proyecto esté listo, ve a **SQL Editor → New query**, pega todo el contenido de `supabase/migrations/20261012200000_crear_resultados.sql` y presiona **Run**. Debe decir *Success*.
 3. Ve a **Project Settings → API** (o **Data API / API Keys**) y copia:
    - **Project URL** → algo como `https://abcdefghijkl.supabase.co`
    - **Publishable key** (`sb_publishable_...`) o, en proyectos antiguos, la **anon public** (`eyJ...`).
@@ -51,6 +51,6 @@ Test de arquetipos de liderazgo de NuestraBarranquilla para encuentros y eventos
 
 ## Seguridad
 
-- La llave pública solo permite **insertar** filas; no permite leer, editar ni borrar (lo controla RLS en `schema.sql`).
+- La llave pública solo permite **insertar** filas; no permite leer, editar ni borrar (lo controla RLS en la migración de `supabase/migrations/`).
 - Los datos solo se ven entrando a tu panel de Supabase.
 - El plan gratis de Supabase pausa proyectos tras 7 días sin actividad: entra al panel antes del evento si llevas tiempo sin usarlo.
