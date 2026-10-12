@@ -1,6 +1,6 @@
-# ¿Qué arquetipo eres? · BAQMUN 2026
+# ¿Qué arquetipo de liderazgo eres?
 
-Test de arquetipos de liderazgo de NuestraBarranquilla. Es una página estática (`index.html`) que se publica gratis con **GitHub Pages** y guarda los resultados en **Supabase**.
+Test de arquetipos de liderazgo de NuestraBarranquilla para encuentros y eventos de jóvenes. Es una página estática (`index.html`) que se publica gratis con **GitHub Pages** y guarda los resultados en **Supabase**.
 
 ## Archivos
 
